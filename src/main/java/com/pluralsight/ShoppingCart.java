@@ -29,6 +29,14 @@ public class ShoppingCart {
   }
   return cartItem;
  }
+ public void deleteCartItem(int index){
+  try{
+
+   cartItems.remove(index);
+  } catch (IndexOutOfBoundsException e){
+
+  }
+ }
 
  public ArrayList<CartItem> getCartItems() {
   return cartItems;
